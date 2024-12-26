@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="header">BattleShip</div>
+    <div class="winnerBanner"></div>
+    <div class="container">
+      <div class="gameboard">
+        <div class="boardOne">
+          <div class="containerP1"></div>
+        </div>
+
+        <div class="BtnContainer">
+          <button class="startBtn">Start Game!</button>
+          <button class="replaytBtn">Replay!</button>
+        </div>
+
+        <div class="boardTwo">
+          <div class="containerP2"></div>
+        </div>
+        <div class="legend-box">
+          <div class="legend-item">
+            <span class="legend-color carrier-color"></span>
+            Carrier
+          </div>
+          <div class="legend-item">
+            <span class="legend-color battleship-color"></span>
+            Battleship
+          </div>
+          <div class="legend-item">
+            <span class="legend-color cruiser-color"></span>
+            Cruiser
+          </div>
+          <div class="legend-item">
+            <span class="legend-color submarine-color"></span>
+            Submarine
+          </div>
+          <div class="legend-item">
+            <span class="legend-color destroyer-color"></span>
+            Destroyer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="ship-container-template">
+      <div class="shipContainer">
+        <div class="shipHeader">- Drag your Battleships -</div>
+        <div class="shipSubHeader">Double click the ship to rotate</div>
+        <div class="shipTiles">
+          <div
+            class="ship"
+            id="battleship"
+            data-length="4"
+            data-orient="horizontal"
+          >
+            <img
+              src="dbb1f789e511c7f3fc0d.png"
+              alt=""
+              id="battleship"
+              draggable="true"
+            />
+          </div>
+          <div
+            class="ship"
+            id="destroyer"
+            data-length="2"
+            data-orient="horizontal"
+          >
+            <img
+              src="cdeea81e02ac107dfc38.png"
+              alt=""
+              id="destroyer"
+              draggable="true"
+            />
+          </div>
+          <div
+            class="ship"
+            id="submarine"
+            data-length="3"
+            data-orient="horizontal"
+          >
+            <img
+              src="730ae13068f75b138d3d.png"
+              alt=""
+              id="submarine"
+              draggable="true"
+            />
+          </div>
+          <div
+            class="ship"
+            id="cruiser"
+            data-length="3"
+            data-orient="horizontal"
+          >
+            <img
+              src="5b30f00ee67e0fee9f62.png"
+              alt=""
+              id="cruiser"
+              draggable="true"
+            />
+          </div>
+          <div
+            class="ship"
+            id="carrier"
+            data-length="5"
+            data-orient="horizontal"
+          >
+            <img
+              src="f59bea5d4886ed5920bd.png"
+              alt=""
+              id="carrier"
+              draggable="true"
+            />
+          </div>
+        </div>
+        <div class="noShipsLeft"></div>
+      </div>
+    </template>
+  </body>
+</html>
